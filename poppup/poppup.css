@@ -1,0 +1,113 @@
+*{
+    padding:  0 ;
+    margin: 0 ; 
+    list-style:  none ;
+    text-decoration:  none ;
+    font-family: sans-serif;
+
+}
+.container-popping{
+    
+    background:url("images/bg.png");
+    background-size:cover ;
+    background-position: center ;
+    color: white ;
+    align-items: center;
+    height: 100vh;
+    display: flex ;
+    flex-direction:  column ;
+    justify-content: center;
+}
+h1{
+    font-size:60px  ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px ;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3) ;
+}
+.btn{
+    color: black ;
+    background: orangered ;
+    border:  1px solid orangered ;
+    padding: 10px 20px ;
+    width: 150px ;
+    font-weight: 600 ;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+.active.container-popping{
+    filter: blur(5px) brightness(.7);
+}
+.text-joining{
+    
+    position:  fixed ;
+    background:  url(images/bg2.avif );
+    background-size: cover ;
+    border-radius: 10px ;
+    box-shadow: 0 8px 8px rgba(0,0,0,.3);
+    width: 350px ;
+    height:  200px ;
+    top:  30% ;
+    left: 50% ;
+    transform:  translateX(-50%);
+    display:  flex ;
+    flex-direction:  column ;
+    justify-content: center ;
+    padding:  20px ;
+    color:  white  ;
+    transition:  all 0.7s ;
+    opacity: 1;
+}
+.text-joining h4 {
+    color:blueviolet  ;
+    position: absolute ;
+    top: 35px ;
+    left:  20px  ;
+    font-size: 26px ;
+}
+.text-joining label 
+{
+    color: rgb(225, 192, 255) ;
+    font-weight: 600 ;
+}
+i{
+    font-size: 40px ;
+    position: absolute ;
+    top : 0; 
+    right:  0 ;
+    cursor:  pointer ;
+}
+.text-joining .input {
+    width:  99% ;
+    padding:  10px 0px ;
+    outline:  none ;
+    margin: 10px 0 10px 0  ;
+    border-radius :5px  ;
+    border:  1px solid white  ;
+    text-align:  center ;
+}
+.text-joining .input::placeholder{
+    color: lightgray ;
+}
+.popup-btn{
+    padding: 10px 20px ;
+    width: 100%;
+    background:  orangered ;
+    border: 1px solid orangered ;
+    border-radius :5px  ;
+    cursor: pointer;
+    font-weight: 600 ;
+ 
+}
+.popup-btn:hover{
+    filter: brightness(0.8);
+    color: rgb(225, 192, 255);
+
+}
+.active.text-joining {
+    visibility:  hidden;
+    opacity:  0 ;
+    top: 10%;
+}
